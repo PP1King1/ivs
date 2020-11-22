@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="headline">Bewertungsportal</h1>
+    
+    <div class="nav">
+        <a href="./home.html">Startseite</a>
+        <a href="./rating.html">Bewertung</a>
+        <a href="./statistics.html">Statistik</a>
+        <a href="./aboutus.html">Über uns</a>
+    </div>
+
+    <div class="mainWindow">
+        <h1>Bewertung</h1>
+        <p>Bitte Bewerten sie unser Produkt</p>
+        <p>Sie haben in jeder Kategorie die möglichkeit 
+        zwischen 1 und 10 Punkte zu vergeben</p>
+
+        <form name="rating" action="rating.php" method="post" onsubmit="return validateForm()">
+            <label for="question1">Hat ihnen die Farbe unseres Produkts gefallen?</label><br>
+            <input type="text" id="question1" name="question1"><br>
+            <label for="question2">Hat ihnen die Form unseres Produkts gefallen?</label><br>
+            <input type="text" id="question2" name="question2"><br>
+            <label for="question3">Haben ihnen die eingesetzten Materialien zugesagt?</label><br>
+            <input type="text" id="question3" name="question3"><br>
+            <label for="question4">Wurde das Produkt gut verarbeitet?</label><br>
+            <input type="text" id="question4" name="question4"><br>
+            <input type="submit">
+        </form> 
+    </div>
+    
+    <script src="./rating.js"></script>
+</body>
+</html>
